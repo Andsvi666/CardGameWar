@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url(
+        https://t3.ftcdn.net/jpg/01/32/15/90/360_F_132159064_oG1HXGUOqgiLNlJ5vIFhelBeSgEPGy8u.webp
+    );
+    font-family: 'Nerko One', cursive;
+    color:cornsilk;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
+
+.results{
+    width: 80vw;
+    height: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    /* From https://css.glass */
+    background: rgba(222, 0, 245, 0.46);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(222, 0, 245, 1);
+}
+
+.buttons{
+    width: 50vw;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background: transparent;
+}
+
+.button{
+    height: 5vh;
+    width: 200px;
+    font-size: 150%;
+    cursor: pointer;
+    /* From https://css.glass */
+    background: rgba(245, 151, 0, 0.46);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(245, 151, 0, 1);
+}
+
+.gameTable{
+    width: 90vw;
+    height: 23vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.gameCards{
+    width: 50%;
+    height: 16vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background: transparent;
+}
+
+.playerTable{
+    width: 90vw;
+    height: 26vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    background: transparent;
+}
+
+.title{
+    width: 150px;
+    vertical-align: middle;
+    font-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(222, 0, 245, 0.46);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(222, 0, 245, 1);
+}
+
+
+
+#player1,#player2{
+    width: 60vw;
+    font-size: 250%;
+}
+
+#battle{
+    width: 40vw;
+    font-size: 250%;
+}
+
+#num1,#num2,#num3,#num4,#title1,#title2{
+    font-size: 120%;
+    /* From https://css.glass */
+    background: rgba(245, 151, 0, 0.46);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(245, 151, 0, 1);
+}
+
+.stacks{
+    height: 22vh;
+    width: 80%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background-image: inherit;
+    background: transparent;
+}
+ 
+.stack{
+    height: 20vh;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    background: transparent; 
+}
+
+.card{
+    height: 150px;
+    width: 105px;
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass  blue */
+    background: rgba(0, 138, 245, 0.46);
+    border-radius: 16px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(0, 138, 245, 1);
+    /* From https://css.glass red */
+    background: rgba(249, 14, 14, 0.39);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(249, 14, 14, 1);
+}
+
+#cards3{
+    cursor: pointer;
+}
+
+#cards5,#cards6{
+    font-size: 300%;
+}
+
+@media only screen and (max-width: 800px), (max-height: 900px)
+{
+    .wrapper{
+    }
+
+    .buttons{
+        width: 90%;
+    }
+
+    .button{
+        width: 30vw;
+        font-size: 100%;
+    }
+
+    .gameTable{
+        width: 90%;
+    }
+
+    .gameCards{
+        width: 90%;
+        height: 80%;
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
+
+    .playerTable{
+        width: 90%;
+    }
+
+    .results{
+        width: 80vw;
+        font-size: 150%;
+    }
+
+    .card{
+        height: 10vh;
+        width: 70px;
+        font-size: 80%;
+    }
+
+    .title{
+        width: 15vw;
+        padding: 0.3vh 0;
+        font-size: 80%;
+    }
+
+    #player1,#player2,#battle{
+        font-size: 100%;
+    }
+
+    #num1,#num2,#num3,#num4,#title1,#title2{
+        width: 70px;
+        font-size: 60%;
+    }
+
+    #cards5,#cards6{
+        font-size: 200%;
+    }
+
+}
